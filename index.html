@@ -1,192 +1,179 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>StudyHunt - Free JEE Preparation</title>
+<title>StudyHunt | Free JEE Preparation</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7ff;
-      color: #172033;
-    }
+body{
+font-family:Arial,sans-serif;
+background:#f5f7ff;
+color:#172033;
+line-height:1.6;
+}
 
-    header {
-      background: linear-gradient(135deg, #4f46e5, #7c3aed);
-      color: white;
-      padding: 22px 18px;
-      text-align: center;
-    }
+header{
+background:linear-gradient(135deg,#4338ca,#7c3aed);
+color:white;
+padding:28px 18px;
+text-align:center;
+}
 
-    header h1 {
-      font-size: 34px;
-      margin-bottom: 8px;
-    }
+.logo{
+font-size:36px;
+font-weight:bold;
+}
 
-    header p {
-      font-size: 16px;
-    }
+.tagline{
+margin-top:5px;
+font-size:16px;
+}
 
-    .hero {
-      text-align: center;
-      padding: 45px 20px;
-      background: white;
-    }
+.hero{
+padding:45px 20px;
+text-align:center;
+background:white;
+}
 
-    .hero h2 {
-      font-size: 30px;
-      margin-bottom: 12px;
-    }
+.hero h1{
+font-size:32px;
+margin-bottom:12px;
+}
 
-    .hero p {
-      max-width: 650px;
-      margin: auto;
-      line-height: 1.6;
-      color: #555;
-    }
+.hero p{
+max-width:650px;
+margin:auto;
+color:#555;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 25px 18px;
-    }
+.container{
+max-width:1000px;
+margin:auto;
+padding:25px 18px;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
+.section-title{
+text-align:center;
+margin-bottom:20px;
+font-size:27px;
+}
 
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 16px;
-      text-align: center;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-    }
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+gap:18px;
+}
 
-    .card .icon {
-      font-size: 38px;
-      margin-bottom: 12px;
-    }
+.card{
+background:white;
+padding:25px 18px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+transition:.2s;
+}
 
-    .card h3 {
-      margin-bottom: 10px;
-    }
+.card:hover{
+transform:translateY(-4px);
+}
 
-    .card p {
-      color: #666;
-      line-height: 1.5;
-    }
+.icon{
+font-size:42px;
+margin-bottom:10px;
+}
 
-    .motivation {
-      margin-top: 25px;
-      background: #111827;
-      color: white;
-      padding: 35px 20px;
-      border-radius: 18px;
-      text-align: center;
-    }
+.card h3{
+margin-bottom:8px;
+}
 
-    .motivation p {
-      margin-top: 12px;
-      color: #d1d5db;
-    }
+.card p{
+color:#666;
+font-size:14px;
+}
 
-    footer {
-      margin-top: 30px;
-      background: #172033;
-      color: white;
-      text-align: center;
-      padding: 22px;
-    }
+.card button{
+margin-top:15px;
+padding:10px 18px;
+border:0;
+border-radius:8px;
+background:#4f46e5;
+color:white;
+font-weight:bold;
+}
 
-    footer p {
-      color: #cbd5e1;
-      margin-top: 6px;
-    }
-  </style>
+.motivation{
+margin-top:30px;
+padding:35px 20px;
+border-radius:18px;
+background:#111827;
+color:white;
+text-align:center;
+}
+
+.motivation p{
+margin-top:10px;
+color:#d1d5db;
+}
+
+footer{
+margin-top:30px;
+padding:25px;
+background:#172033;
+color:white;
+text-align:center;
+}
+
+footer small{
+color:#cbd5e1;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>🎯 StudyHunt</h1>
-    <p>JEE Preparation, Ab Sabke Liye Free.</p>
-  </header>
+<header>
+<div class="logo">🎯 StudyHunt</div>
+<div class="tagline">JEE Preparation, Ab Sabke Liye Free.</div>
+</header>
 
-  <section class="hero">
-    <h2>Welcome to StudyHunt 📚</h2>
-    <p>
-      JEE aspirants ke liye free learning platform.
-      Yahan formulas, notes, practice questions,
-      learning resources aur motivation ek hi jagah milenge.
-    </p>
-  </section>
+<section class="hero">
 
-  <main class="container">
+<h1>Welcome to StudyHunt 📚</h1>
 
-    <div class="cards">
+<p>
+JEE Main aur Advanced aspirants ke liye
+free learning platform. Formulas, notes,
+practice aur useful learning resources —
+sab ek jagah.
+</p>
 
-      <div class="card">
-        <div class="icon">📐</div>
-        <h3>JEE Formulas</h3>
-        <p>Important Maths formulas ko chapter-wise revise karo.</p>
-      </div>
+</section>
 
-      <div class="card">
-        <div class="icon">📚</div>
-        <h3>Free Notes</h3>
-        <p>JEE preparation ke liye useful study notes.</p>
-      </div>
+<main class="container">
 
-      <div class="card">
-        <div class="icon">📝</div>
-        <h3>Practice</h3>
-        <p>Apni preparation ko questions aur quizzes se test karo.</p>
-      </div>
+<h2 class="section-title">🚀 Start Learning</h2>
 
-      <div class="card">
-        <div class="icon">🎥</div>
-        <h3>Learning Videos</h3>
-        <p>Topics ko samajhne ke liye free educational resources.</p>
-      </div>
+<div class="cards">
 
-      <div class="card">
-        <div class="icon">💡</div>
-        <h3>Easy Explanation</h3>
-        <p>Difficult concepts ko simple language mein samjho.</p>
-      </div>
+<div class="card">
+<div class="icon">📐</div>
+<h3>JEE Maths</h3>
+<p>Important formulas aur concepts ko chapter-wise revise karo.</p>
+<button>Coming Soon</button>
+</div>
 
-      <div class="card">
-        <div class="icon">🔥</div>
-        <h3>JEE Motivation</h3>
-        <p>Preparation ke journey mein motivated raho.</p>
-      </div>
+<div class="card">
+<div class="icon">📚</div>
+<h3>Free Notes</h3>
+<p>JEE preparation ke liye useful study notes.</p>
+<button>Coming Soon</button>
+</div>
 
-    </div>
-
-    <div class="motivation">
-      <h2>🔥 Today's Motivation</h2>
-      <p>
-        “Har din ka chhota improvement, ek din bada result banata hai.”
-      </p>
-    </div>
-
-  </main>
-
-  <footer>
-    <strong>🎯 StudyHunt</strong>
-    <p>Free education for every JEE aspirant.</p>
-  </footer>
-
-</body>
-</html>
+<div class="card">
+<div class="icon">📝</div>
+<h3>Practice</h3>
+<p>
