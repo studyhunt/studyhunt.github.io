@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>StudyHunt | JEE Maths Formulas</title>
+<title>StudyHunt | JEE Maths Formula Hub</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -13,22 +13,18 @@ body{
 font-family:Arial,sans-serif;
 background:#f5f7ff;
 color:#172033;
+line-height:1.6;
 }
 
 header{
 background:linear-gradient(135deg,#4338ca,#7c3aed);
 color:white;
 text-align:center;
-padding:28px 18px;
+padding:30px 18px;
 }
 
-header h1{
-font-size:32px;
-}
-
-header p{
-margin-top:6px;
-}
+header h1{font-size:32px}
+header p{margin-top:5px}
 
 .container{
 max-width:1000px;
@@ -38,42 +34,66 @@ padding:25px 18px;
 
 .back{
 display:inline-block;
-margin-bottom:20px;
-color:#4f46e5;
+margin-bottom:22px;
+color:#4338ca;
 font-weight:bold;
 text-decoration:none;
 }
 
-.section-title{
+.title{
 text-align:center;
-margin-bottom:20px;
-font-size:27px;
+margin-bottom:25px;
+}
+
+.title h2{font-size:28px}
+
+.title p{
+color:#666;
+margin-top:5px;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:16px;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:18px;
 }
 
-.chapter{
+.topic{
 background:white;
-padding:20px;
-border-radius:16px;
-box-shadow:0 5px 16px rgba(0,0,0,.08);
+border-radius:18px;
+padding:22px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
 }
 
-.chapter h3{
-margin-bottom:12px;
+.topic h3{
 color:#4338ca;
+margin-bottom:12px;
 }
 
 .formula{
 background:#f1f5ff;
 padding:10px;
-margin:8px 0;
 border-radius:8px;
+margin:8px 0;
 font-family:Georgia,serif;
+font-size:15px;
+overflow-x:auto;
+}
+
+.note{
+margin-top:10px;
+font-size:13px;
+color:#666;
+}
+
+.badge{
+display:inline-block;
+background:#ede9fe;
+color:#5b21b6;
+padding:4px 8px;
+border-radius:20px;
+font-size:12px;
+margin-bottom:10px;
 }
 
 footer{
@@ -81,8 +101,10 @@ margin-top:30px;
 background:#172033;
 color:white;
 text-align:center;
-padding:22px;
+padding:24px;
 }
+
+footer small{color:#cbd5e1}
 </style>
 </head>
 
@@ -90,100 +112,233 @@ padding:22px;
 
 <header>
 <h1>📐 StudyHunt Maths</h1>
-<p>JEE Main + Advanced Formula Library</p>
+<p>JEE Main + Advanced Formula Hub</p>
 </header>
 
 <main class="container">
 
 <a class="back" href="index.html">← Back to StudyHunt</a>
 
-<h2 class="section-title">📚 Class 11 Mathematics</h2>
+<div class="title">
+<h2>📚 JEE Mathematics</h2>
+<p>Important formulas ko topic-wise revise karo.</p>
+</div>
 
 <div class="grid">
 
-<div class="chapter">
-<h3>Sets</h3>
-<div class="formula">A ∪ B = Union</div>
-<div class="formula">A ∩ B = Intersection</div>
-<div class="formula">n(A ∪ B) = n(A)+n(B)-n(A ∩ B)</div>
-</div>
+<!-- ALGEBRA -->
 
-<div class="chapter">
+<div class="topic">
+<span class="badge">Algebra</span>
 <h3>Quadratic Equations</h3>
-<div class="formula">ax² + bx + c = 0</div>
-<div class="formula">D = b² − 4ac</div>
-<div class="formula">x = (−b ± √D)/2a</div>
+
+<div class="formula">
+ax² + bx + c = 0
 </div>
 
-<div class="chapter">
-<h3>Sequence & Series</h3>
-<div class="formula">aₙ = a + (n−1)d</div>
-<div class="formula">Sₙ = n/2 [2a + (n−1)d]</div>
+<div class="formula">
+D = b² − 4ac
 </div>
 
-<div class="chapter">
-<h3>Trigonometry</h3>
-<div class="formula">sin²θ + cos²θ = 1</div>
-<div class="formula">1 + tan²θ = sec²θ</div>
-<div class="formula">1 + cot²θ = cosec²θ</div>
+<div class="formula">
+x = (−b ± √D) / 2a
 </div>
 
-<div class="chapter">
+<p class="note">
+D > 0: two real roots<br>
+D = 0: equal roots<br>
+D < 0: no real roots
+</p>
+</div>
+
+<div class="topic">
+<span class="badge">Algebra</span>
+<h3>Sequences & Series</h3>
+
+<div class="formula">
+aₙ = a + (n−1)d
+</div>
+
+<div class="formula">
+Sₙ = n/2 [2a + (n−1)d]
+</div>
+
+<div class="formula">
+GP: aₙ = arⁿ⁻¹
+</div>
+
+<div class="formula">
+Sₙ = a(rⁿ−1)/(r−1)
+</div>
+</div>
+
+<!-- TRIGONOMETRY -->
+
+<div class="topic">
+<span class="badge">Trigonometry</span>
+<h3>Basic Identities</h3>
+
+<div class="formula">
+sin²θ + cos²θ = 1
+</div>
+
+<div class="formula">
+1 + tan²θ = sec²θ
+</div>
+
+<div class="formula">
+1 + cot²θ = cosec²θ
+</div>
+</div>
+
+<div class="topic">
+<span class="badge">Trigonometry</span>
+<h3>Compound Angles</h3>
+
+<div class="formula">
+sin(A+B) = sinA cosB + cosA sinB
+</div>
+
+<div class="formula">
+cos(A+B) = cosA cosB − sinA sinB
+</div>
+
+<div class="formula">
+tan(A+B) = (tanA+tanB)/(1−tanA tanB)
+</div>
+</div>
+
+<!-- COORDINATE -->
+
+<div class="topic">
+<span class="badge">Coordinate Geometry</span>
 <h3>Straight Lines</h3>
-<div class="formula">y = mx + c</div>
-<div class="formula">m = (y₂−y₁)/(x₂−x₁)</div>
-<div class="formula">Distance = |ax₁+by₁+c|/√(a²+b²)</div>
+
+<div class="formula">
+y = mx + c
 </div>
 
-<div class="chapter">
-<h3>Circles</h3>
-<div class="formula">(x−h)² + (y−k)² = r²</div>
-<div class="formula">Centre = (h,k)</div>
-<div class="formula">Radius = r</div>
+<div class="formula">
+m = (y₂−y₁)/(x₂−x₁)
 </div>
 
+<div class="formula">
+Distance = |ax₁+by₁+c| / √(a²+b²)
+</div>
 </div>
 
-<h2 class="section-title" style="margin-top:40px">
-📚 Class 12 Mathematics
-</h2>
+<div class="topic">
+<span class="badge">Coordinate Geometry</span>
+<h3>Circle</h3>
 
-<div class="grid">
-
-<div class="chapter">
-<h3>Limits</h3>
-<div class="formula">lim sin x/x = 1</div>
-<div class="formula">lim (eˣ−1)/x = 1</div>
+<div class="formula">
+(x−h)² + (y−k)² = r²
 </div>
 
-<div class="chapter">
+<div class="formula">
+Centre = (h,k)
+</div>
+
+<div class="formula">
+Radius = r
+</div>
+</div>
+
+<!-- CALCULUS -->
+
+<div class="topic">
+<span class="badge">Calculus</span>
 <h3>Differentiation</h3>
-<div class="formula">d(xⁿ)/dx = nxⁿ⁻¹</div>
-<div class="formula">d(sin x)/dx = cos x</div>
-<div class="formula">d(cos x)/dx = −sin x</div>
+
+<div class="formula">
+d(xⁿ)/dx = nxⁿ⁻¹
 </div>
 
-<div class="chapter">
+<div class="formula">
+d(sin x)/dx = cos x
+</div>
+
+<div class="formula">
+d(cos x)/dx = −sin x
+</div>
+
+<div class="formula">
+d(eˣ)/dx = eˣ
+</div>
+</div>
+
+<div class="topic">
+<span class="badge">Calculus</span>
+<h3>Basic Integration</h3>
+
+<div class="formula">
+∫xⁿ dx = xⁿ⁺¹/(n+1) + C
+</div>
+
+<div class="formula">
+∫1/x dx = ln|x| + C
+</div>
+
+<div class="formula">
+∫eˣ dx = eˣ + C
+</div>
+</div>
+
+<!-- MATRICES -->
+
+<div class="topic">
+<span class="badge">Algebra</span>
 <h3>Matrices</h3>
-<div class="formula">|A| = Determinant of A</div>
-<div class="formula">A⁻¹ = adj(A)/|A|</div>
+
+<div class="formula">
+A⁻¹ = adj(A)/|A|
 </div>
 
-<div class="chapter">
-<h3>Probability</h3>
-<div class="formula">P(A) = n(A)/n(S)</div>
-<div class="formula">P(A') = 1 − P(A)</div>
+<div class="formula">
+AA⁻¹ = I
 </div>
 
-<div class="chapter">
+<p class="note">
+A⁻¹ exists when |A| ≠ 0.
+</p>
+</div>
+
+<!-- PROBABILITY -->
+
+<div class="topic">
+<span class="badge">Probability</span>
+<h3>Basic Probability</h3>
+
+<div class="formula">
+P(A) = n(A)/n(S)
+</div>
+
+<div class="formula">
+P(A') = 1 − P(A)
+</div>
+
+<div class="formula">
+0 ≤ P(A) ≤ 1
+</div>
+</div>
+
+<!-- VECTOR -->
+
+<div class="topic">
+<span class="badge">Vector & 3D</span>
 <h3>Vectors</h3>
-<div class="formula">|a| = √(a₁²+a₂²+a₃²)</div>
-<div class="formula">a·b = |a||b|cosθ</div>
+
+<div class="formula">
+|a| = √(a₁²+a₂²+a₃²)
 </div>
 
-<div class="chapter">
-<h3>3D Geometry</h3>
-<div class="formula">Distance = √[(x₂−x₁)²+(y₂−y₁)²+(z₂−z₁)²]</div>
+<div class="formula">
+a·b = |a||b|cosθ
+</div>
+
+<div class="formula">
+a·b = a₁b₁+a₂b₂+a₃b₃
+</div>
 </div>
 
 </div>
@@ -193,7 +348,7 @@ padding:22px;
 <footer>
 <strong>🎯 StudyHunt</strong>
 <br>
-Free JEE learning resources for everyone.
+<small>Free JEE learning resources for everyone.</small>
 </footer>
 
 </body>
